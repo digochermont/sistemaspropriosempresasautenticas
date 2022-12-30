@@ -1,0 +1,707 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+html,body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+
+header{
+	width: 100%;
+	height: 90vh;
+	/*max-height: 600px;*/
+	min-height: 800px;
+	padding: 20px 2%;
+	background-image: url('../imagens/capa.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+div.logo{
+	position: relative;
+	top: -5px;
+	background-color: white;
+	float: left;
+	width:80px;
+	height:80px;
+	background-image: url('../imagens/vaio logo.jpg');
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius:50%;
+
+	/*background-color: gray; *//*quando eu coloco essa logo, meu menu desalinha com a logo e 
+	cai, isso pq a div.logo está com display block. Muito simples a correção.
+	Basta colocar um float left, que eles irão se alinhar novamente.*/
+}
+
+header nav{
+	display: flex;
+	justify-content:flex-end;
+}
+
+header nav.desktop-menu li{
+	float: left;
+	padding:0 20px;
+	list-style-type: none;
+}
+
+header nav.desktop-menu li a{
+	text-decoration: none;
+	color: white;
+}
+
+
+div.chamada1{
+	float: right;
+	max-width:550px;
+	margin:100px 120px;
+	
+}
+
+div.chamada1 h2{
+	font-size:45px;
+	color: white;
+	font-weight: 300;
+}
+
+div.chamada1 p{
+	font-size:18px;
+	color: white;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+section.sessao1{
+	width: 100%;
+	background-color: #472562;
+	padding:0 2%;
+	height: 400px;
+}
+
+section.sessao1 .container{
+	max-width: 1000px;
+}
+
+div.texto-sessao1{
+	margin-top: 60px;
+	padding-left:60px;
+	width: 50%;
+	float: left;
+	color: white;
+}
+
+div.texto-sessao1 h2{
+	font-size:30px;
+	font-weight: 300;
+
+}
+
+div.texto-sessao1 p{
+	font-size: 18px;
+	margin-top:20px;
+
+}
+
+div.texto-sessao1 ul{
+	margin:20px 40px;
+	list-style-position: initial;
+	font-size: 15px;
+
+}
+
+div.texto-sessao1 ul li{
+	margin-top: 8px;
+}
+
+div.btn1-texto{
+	margin-top: 10px;
+	background-color: #FF703D;
+	width: 160px;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	border-radius:50px;
+	line-height: 44px;
+	font-weight:800;
+	font-size: 13px;
+	border: 2px solid white;
+	box-shadow: 3px 4px 6px #1c1d1f;
+}
+
+
+div.device-sessao1{
+	position: relative;
+	top: -40px;
+	float: left;
+	width: 50%;	
+	height:440px;
+	background-image: url('../imagens/device.png');
+	background-size:cover;
+}	
+
+/*--------------------MENU MOBILE----------------------*/
+
+header nav.mobile-menu{
+	cursor: pointer;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url("../imagens/menu.png");
+	background-size: 100% 100%;
+}
+
+header nav.mobile-menu ul{
+	display: none;
+	position: absolute;
+	width: 100%;
+	top:80px;
+	left: 0;
+	list-style-type: none;
+	background-color:rgba(33, 33, 31, 0.9);
+}
+
+
+header nav.mobile-menu:hover ul{
+	display: block;
+
+}
+
+header nav.mobile-menu ul li{
+	text-align: center;
+	border-bottom: 1px solid black;
+	padding: 8px 0;
+}
+
+header nav.mobile-menu ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition:0.2s;
+}	
+
+header nav.mobile-menu ul li a:hover{
+	color:gray;
+}
+
+/*------------Aqui termina Sessao1-------------*/
+
+
+
+/*------------Aqui começa a Sessao2-------------*/
+
+section.sessao2{
+	padding-left:2%;
+	padding-right:2%;
+	background-color: white;
+	text-align: center;
+}
+
+section.sessao2 .containe{
+	max-width: 1000px;
+}
+
+section.sessao2{
+	color: #472663;
+	font-weight:400;
+}
+
+section.sessao2 p{
+	margin:30px 2%;
+	max-width: 800px;
+	display: inline-block;
+	line-height:30px;
+	text-align: justify;
+}
+
+
+section.sessao2 img{
+	position: relative;
+	top:70px;
+	width: 100%;
+	margin-top:30px;
+}
+
+/*------------Aqui termina a Sessao2-------------*/
+
+/*------------Aqui começa a Sessao3-------------*/
+
+.sessao3{
+	width: 100%;
+}
+
+
+.parte1{
+	color: white;
+	float: left;
+	width: 50%;
+	padding:140px 0 90px 0; /*cima, direita,baixo,esquerda*/
+	background-color: #835FA7;
+}
+
+.wraper-parte1{
+	max-width: 600px;
+	float: right;
+	padding:0 30px;
+}
+
+.parte1 h2{
+	font-weight: 300;
+	font-style: italic;
+	font-size: 23px;
+}
+
+.parte1 p{
+	font-size:15px;
+	line-height:28px;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+.parte2{
+	float: left;
+	width: 50%;
+	padding:140px 0 75px 0;	
+}
+
+
+.sobre-autor{
+	max-width:600px;
+	float: left;
+	padding-left: 30px;
+}
+
+.titulo-autor{
+	float: left;
+	width:100%;
+	
+}
+
+
+.wraper-titulo-autor{
+	float: left;
+
+}
+
+.wraper-titulo-autor h2{
+	color: #232323;
+	font-weight: 400px;
+	padding-right: 20px;
+}
+
+.wraper-titulo-autor p{
+	margin-top: 10px;
+	font-size: 12px;
+	font-style: italic;
+	font-weight:700;
+	color: #232323;
+
+}	
+
+/*
+.titulo-autor .img-autor{
+	background-image: url("../imagens/eu.jpg");
+	width: 50px;
+	height: 50px;
+	border-radius:25px;
+	background: green;
+	position: relative;
+	top: -4px;
+	left:30px;
+}
+*/
+
+.img-autor img{
+	width:60px;
+	height:60px;
+	border-radius:30px;
+	margin-left: 20px;
+	
+}
+
+
+.texto-autor p{
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+	padding-right: 20px;
+	font-size:15px;
+	line-height:28px;
+	text-align: justify;
+	color: #232323;
+	
+}
+
+.slider-bullets{
+	float:left;
+	width: 100%;
+	margin-top:10px;
+	padding-left: 30px;
+
+}
+
+.slider-bullets span{
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	border-radius:8px;
+	margin-right: 8px;
+	float: left;
+	background-color: rgb(220,220,220);
+
+}
+
+.slider-bullets span:first-child{
+	background-color: rgb(140,140,140);
+}
+/*------------Aqui termina a Sessao3-------------*/
+
+/*------------Aqui começa a Sessao4-------------*/
+
+section.sessao4{
+	background-color:#472563;
+	padding: 100px 0;
+}
+
+section.sessao4 .form{
+	float: left;
+	width: 50%;
+	color: white;
+	padding-left: 10px;
+}
+
+.form{
+	padding-left: 10px;
+}
+
+.form h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.form p{
+	margin-top: 10px;
+	max-width: 400px;
+	font-size: 15px;
+	font-weight: 300;
+	padding-right: 10px;
+
+}
+
+.form form{
+	margin-top: 15px;
+}
+
+.form form input[type=text]{
+	margin-top:15px;
+	outline: 0 ;
+	width:90%;
+	max-width: 480px;
+	height:38px;
+	padding-left:10px ;
+	line-height:58px;
+	border: 1px solid rgb(200,200,200);
+}
+
+.form form textarea{
+	line-height:30px;
+	height: 160px;
+	margin-top:15px;
+	outline: 0 ;
+	width:90%;
+	max-width: 480px;
+	padding: 15px;
+	border: 1px solid rgb(200,200,200);
+}
+
+
+.form form input[type=submit]{
+	display: block;
+	margin-top:15px;
+	background-color: #FF703D;
+	width:90px;
+	height:30px;
+	cursor: pointer;
+	color: white;
+	border-radius:50px;
+	font-weight:800;
+	font-size: 13px;
+	border: 2px solid white;
+	box-shadow: 3px 4px 6px #1c1d1f;
+}
+
+.map-wraper{
+	float: left;
+	width: 50%;
+	color: white;
+	padding: 0 10px;
+}
+
+.map-wraper h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.map-wraper3{
+	margin-top: 10px;	
+	width: 100%;
+	max-width: 480px;
+	position: relative;
+}
+
+.map-wraper2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	padding-top:100%;
+}
+
+.map{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border: 5px solid gray;
+}
+
+footer{
+	padding: 40px 2%;
+	background-color: #192123;
+	color: white;
+}
+
+
+footer p:nth-of-type(1){
+	float:left;
+}
+	
+footer p:nth-of-type(2){
+	float:right;
+}
+
+
+
+
+
+
+/*------------Aqui termina a Sessao4-------------*/
+
+
+
+
+
+
+
+
+/*--------------------MEDIA QUERIES----------------------*/
+@media screen and (max-width: 810px){
+	div.device-sessao1{
+	display: none;
+	}
+
+	div.chamada1{
+		margin-top: -20px;
+	}
+
+	section.sessao2{
+		margin-top: 40px;
+	}
+
+}
+
+
+@media screen and (max-width: 768px){
+
+	header{
+		height: auto;
+		min-height: 90vh;
+		width: 100%;
+		padding: 40px 2%;
+	}	
+
+	header nav.desktop-menu{
+		display: none;
+	}
+
+	header nav.mobile-menu{
+		display:inline-block;
+		margin-left:60px;
+	}
+
+
+	div.chamada1{
+		float: none;
+		max-width:none;
+		width: 100%;
+		text-align: center;
+		margin:80px 0;
+		
+	}
+
+	div.chamada1 h2{
+		font-size:45px;
+		color: white;
+		font-weight: 300;
+	}
+
+	div.chamada1 p{
+		font-size:18px;
+		color: white;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	section.sessao1{
+		height: auto;
+		padding:40px 2%;
+		text-align: center;
+	}
+
+	div.texto-sessao1{
+		width: 100%;
+		display: inline-block;
+		padding-left: 0;
+		margin-top: 0;
+		position: static;
+		float: none;
+	}
+
+	div.texto-sessao1 ul{
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+	div.texto-sessao1 ul li{
+		float: none;
+		text-align: left;
+	}
+
+	div.btn1-texto{
+	display: inline-block;
+		
+	}
+
+	section.sessao2{
+		padding:20px 2%;
+		text-align: center;
+	}
+
+
+	.img-autor img{
+		text-align: center;
+	}
+
+	
+	section.sessao2 img{
+		top:30px;
+		margin-top: 20px;
+	}
+
+
+	section.sessao4 .container{
+		text-align: center; 	
+		height:950px;
+
+	}
+
+	.form{
+		width: 100%;
+		position:relative;
+		top:-50px;
+		left:120px;
+
+	}
+
+	.form p{
+		display: inline-block;
+		float: none;
+	}
+
+	.form form input[type=text]{
+		width:100%;
+	}
+
+	.form form textarea{
+		width: 100%;
+	}
+
+	.map-wraper{
+		float:left;
+		width: 100%;
+		padding: 0 2%;
+	}
+
+	.map-wraper3{
+		margin-top:20px;
+		width:80%;
+		padding-top: 80px;
+		display: inline-block;
+		max-width: none;
+		position: relative;
+
+	}
+
+	.map-wraper2{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	
+	}
+
+	.form form input[type=submit]{
+		margin-top:20px;
+		display:inline-block;
+	}	
+}
+
+
+@media screen and (max-width:730px){
+
+	section.sessao3 .parte1{
+		width: 100%;
+		padding:60px 0;
+	}
+
+	section.sessao3 .parte2{
+		width: 100%;
+		padding:60px 0;
+	
+	}
+}
+
+@media screen and (max-width: 580px){
+
+	footer{
+	text-align: center;
+	}
+
+
+	footer p:nth-of-type(1){
+		float:none;
+	}
+	
+	footer p:nth-of-type(2){
+		float:none;
+		margin-top: 10px;
+	}
+
+}
